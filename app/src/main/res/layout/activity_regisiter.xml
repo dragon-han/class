@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rb"
+    android:background="@drawable/backound">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:background="@drawable/tv_text_bg"
+            android:gravity="center"
+            android:text="Schedule    System"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left">
+        <TextView
+            android:text="用户名:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/tv_text_bg"
+            android:textColor="@color/bt_color_purple"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/et_usernumber"
+            style="@style/et_style"
+            android:layout_width="248dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/tv_text_bg"
+            android:hint="请输入手机号（学号）" />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left">
+        <TextView
+            android:text="姓    名:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/tv_text_bg"
+            android:textColor="@color/bt_color_purple"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/et_style"
+            android:layout_width="248dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/tv_text_bg"
+            android:hint="请输入姓名" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left">
+        <TextView
+            android:text="密    码:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/tv_text_bg"
+            android:textColor="@color/bt_color_purple"
+            android:textSize="22dp"/>
+        <EditText
+            android:hint="请输入密码"
+            android:id="@+id/et_password"
+            android:layout_marginLeft="20dp"
+            android:layout_width="248dp"
+            style="@style/et_style"
+            android:background="@drawable/tv_text_bg"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="left">
+        <TextView
+            android:text="确认密码:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/tv_text_bg"
+            android:textColor="@color/bt_color_purple"
+            android:textSize="22dp"/>
+        <EditText
+            android:hint="请再次输入密码"
+            android:id="@+id/again_password"
+            android:layout_width="248dp"
+            style="@style/et_style"
+            android:background="@drawable/tv_text_bg"/>
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/rb_agree"
+        android:layout_marginTop="10dp"
+        android:buttonTint="#1C60E3"
+        android:text="同意用户协议"
+        android:textSize="20dp"
+        android:textColor="#1C60E3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_regisiter"
+        android:text="注         册"
+        style="@style/bt_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text_bg"
+        android:onClick="userRegister"/>
+
+
+
+    </LinearLayout>
